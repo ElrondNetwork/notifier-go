@@ -25,6 +25,8 @@ func CreateWSHandler(apiType string, wsDispatcher dispatcher.Dispatcher, marshal
 		return &disabled.WSHandler{}, nil
 	case common.WSPublisherType:
 		return createWSHandler(wsDispatcher, marshaller)
+	case common.WSPublisherTypeV2:
+		return &disabled.WSHandler{}, nil
 	default:
 		return nil, common.ErrInvalidAPIType
 	}

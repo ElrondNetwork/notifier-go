@@ -15,6 +15,8 @@ func CreateHub(apiType string) (dispatcher.Hub, error) {
 		return &disabled.Hub{}, nil
 	case common.WSPublisherType:
 		return createHub()
+	case common.WSPublisherTypeV2:
+		return &disabled.Hub{}, nil
 	default:
 		return nil, common.ErrInvalidAPIType
 	}
