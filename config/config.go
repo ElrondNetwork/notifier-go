@@ -11,11 +11,12 @@ type Configs struct {
 
 // MainConfig defines the config setup based on main config file
 type MainConfig struct {
-	General            GeneralConfig
-	WebSocketConnector WebSocketConfig
-	ConnectorApi       ConnectorApiConfig
-	Redis              RedisConfig
-	RabbitMQ           RabbitMQConfig
+	General                    GeneralConfig
+	WebSocketConnector         WebSocketConfig
+	ConnectorApi               ConnectorApiConfig
+	Redis                      RedisConfig
+	RabbitMQ                   RabbitMQConfig
+	ExternalWebSocketConnector WebSocketConfig
 }
 
 // GeneralConfig maps the general config section

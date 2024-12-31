@@ -6,6 +6,9 @@ const (
 
 	// MessageQueuePublisherType defines a webserver api type using a message queueing service
 	MessageQueuePublisherType string = "rabbitmq"
+
+	// WSPublisherTypeV2 defines a webserver api type using WebSockets without custom filtering and subscriptions
+	WSPublisherTypeV2 string = "wsv2"
 )
 
 const (
